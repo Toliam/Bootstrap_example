@@ -1,0 +1,341 @@
+%main
+  / Карусель со слайдами
+  #carousel.carousel.slide
+    / Индикаторы слайдов
+    %ol.carousel-indicators
+      %li.active{"data-slide-to" => "0", "data-target" => "#carousel"}
+      %li{"data-slide-to" => "1", "data-target" => "#carousel"}
+      %li{"data-slide-to" => "2", "data-target" => "#carousel"}
+      %li{"data-slide-to" => "3", "data-target" => "#carousel"}
+      %li{"data-slide-to" => "4", "data-target" => "#carousel"}
+    / Слайды
+    .carousel-inner
+      .item.active
+        = image_tag "image-1.jpg", :alt => "Изображение", style: "height:750px;width:1800px;"
+        .carousel-caption
+          %h3 Первый слайд
+          %p Описание первого слайда
+          %a.btn.btn-lg.btn-success{:href => "index.html"} Home
+          %a.btn.btn-lg.btn-success{:href => "catalog.html"} Catalog
+      .item
+        = image_tag "image-4.jpg", :alt => "Изображение", style: "height:750px;width:1800px;"
+        .carousel-caption
+          %h3 Второй слайд
+          %p Описание второго слайда
+      .item
+        = image_tag "image-5.jpg", :alt => "Изображение", style: "height:750px;width:1800px;"
+        .carousel-caption
+          %h3 Третий слайд
+          %p Описание третьего слайда
+      .item
+        = image_tag "image-10.jpg", :alt => "Изображение", style: "height:750px;width:1800px;"
+        .carousel-caption
+          %h3 Четвертый слайд
+          %p Описание четвертого слайда
+      .item
+        = image_tag "image-2.jpg", :alt => "Изображение", style: "height:750px;width:1800px;"
+        .carousel-caption
+          %h3 Пятый слайд
+          %p Описание пятого слайда
+    / Стрелки переключения слайдов
+    %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel"}
+      %span.glyphicon.glyphicon-chevron-left
+    %a.right.carousel-control{"data-slide" => "next", :href => "#carousel"}
+      %span.glyphicon.glyphicon-chevron-right
+  / FontAwesome иконки
+  .container
+    %h1 fa-icons
+    %hr/
+    %span.fa-stack.fa-5x
+      %i.fa.fa-circle-thin.fa-stack-2x
+      %i.fa.fa-vk.fa-stack-1x.fa-spin
+    %i.fa.fa-heart.fa-5x
+    %i.fa.fa-5x.fa-cog.fa-spin
+    %i.fa.fa-5x.fa-camera-retro
+    %i.fa.fa-5x.fa-home
+    %i.fa.fa-5x.fa-twitter
+    %i.fa.fa-5x.fa-battery-three-quarters
+    %i.fa.fa-5x.fa-bicycle
+    %i.fa.fa-5x.fa-anchor
+    %i.fa.fa-5x.fa-bluetooth
+    %i.fa.fa-spinner.fa-pulse.fa-5x
+  / Крутая кнопка
+  .container
+    %h1 Очень крутая кнопка
+    %hr/
+    .button
+      %a.button__a{:href => "#"}
+        .demo Демо
+        = image_tag "settings.png", :alt => "image", :class => "set"
+        .disc Смотрите пример
+  / Кнопки
+  .container
+    %h1 Buttons
+    %hr/
+    %p
+      %button.btn.btn-default{:type => "button"}
+        %i.fa.fa-spinner.fa-spin
+      %button.btn.btn-lg.btn-default{:type => "button"} WTF
+      %button.btn.btn-lg.btn-primary{:type => "button"} WTF
+      %button.btn.btn-lg.btn-success{:type => "button"} WTF
+      %button.btn.btn-lg.btn-info{:type => "button"} WTF
+      %button.btn.btn-lg.btn-warning{:type => "button"} WTF
+      %button.btn.btn-lg.btn-danger{:type => "button"} WTF
+      %button.btn.btn-lg.btn-link{:type => "button"} WTF
+    %p
+      %button.btn.btn-default{:type => "button"} WTF
+      %button.btn.btn-primary{:type => "button"} WTF
+      %button.btn.btn-success{:type => "button"} WTF
+      %button.btn.btn-info{:type => "button"} WTF
+      %button.btn.btn-warning{:type => "button"} WTF
+      %button.btn.btn-danger{:type => "button"} WTF
+      %button.btn.btn-link{:type => "button"} WTF
+    %p
+      %button.btn.btn-sm.btn-default{:type => "button"} WTF
+      %button.btn.btn-sm.btn-primary{:type => "button"} WTF
+      %button.btn.btn-sm.btn-success{:type => "button"} WTF
+      %button.btn.btn-sm.btn-info{:type => "button"} WTF
+      %button.btn.btn-sm.btn-warning{:type => "button"} WTF
+      %button.btn.btn-sm.btn-danger{:type => "button"} WTF
+      %button.btn.btn-sm.btn-link{:type => "button"} WTF
+    %p
+      %button.btn.btn-xs.btn-default{:type => "button"} WTF
+      %button.btn.btn-xs.btn-primary{:type => "button"} WTF
+      %button.btn.btn-xs.btn-success{:type => "button"} WTF
+      %button.btn.btn-xs.btn-info{:type => "button"} WTF
+      %button.btn.btn-xs.btn-warning{:type => "button"} WTF
+      %button.btn.btn-xs.btn-danger{:type => "button"} WTF
+      %button.btn.btn-xs.btn-link{:type => "button"} WTF
+    %p
+      %button.btn.active.btn-success.btn-block{:type => "button"} WTF
+      %button.btn.disabled.btn-success.btn-block{:disabled => "disabled", :type => "button"} WTF
+    %p
+      %input.btn.btn-success.btn-block{:type => "submit", :value => "Button 1"}/
+      %button.btn.btn-danger.btn-block{:type => "button"} Button 2
+      %a.btn.btn-danger.btn-block.disabled{:href => "#"} Button 3(disabled)
+    %p
+      %a.btn.btn-default{:href => "#", :role => "button"} Ссылка
+      %button.btn.btn-default{:type => "submit"} Кнопка
+      %input.btn.btn-default{:type => "button", :value => "Input"}/
+      %input.btn.btn-default{:type => "submit", :value => "Submit"}/
+    .btn-toolbar
+      .btn-group.btn-group-lg
+        %a.btn.btn-success{:href => "#"}
+          %i.fa.fa-spinner
+        %a.btn.btn-success{:href => "#"}
+          %i.fa.fa-file
+        %a.btn.btn-success{:href => "#"}
+          %i.fa.fa-download
+      .btn-group.btn-group-lg
+        %a.btn.btn-success{:href => "#"}
+          %i.fa.fa-spinner
+        %a.btn.btn-success{:href => "#"}
+          %i.fa.fa-file
+        %a.btn.btn-success{:href => "#"}
+          %i.fa.fa-download
+      .btn-group.btn-group-lg
+        %a.btn.btn-success{:href => "#"}
+          %i.fa.fa-spinner
+        %a.btn.btn-success{:href => "#"}
+          %i.fa.fa-file
+        %a.btn.btn-success{:href => "#"}
+          %i.fa.fa-download
+    .br
+    .btn-toolbar
+      .btn-group.btn-group-justified
+        %a.btn.btn-success{:href => "#"}
+          %i.fa.fa-spinner
+        %a.btn.btn-success{:href => "#"}
+          %i.fa.fa-file
+        %a.btn.btn-success{:href => "#"}
+          %i.fa.fa-download
+    .btn-toolbar
+      .btn-group.btn-group-vertical
+        %a.btn.btn-success{:href => "#"}
+          %i.fa.fa-spinner
+        %a.btn.btn-success{:href => "#"}
+          %i.fa.fa-file
+        %a.btn.btn-success{:href => "#"}
+          %i.fa.fa-download
+        %a.btn.btn-success{:href => "#"}
+          %i.fa.fa-download
+        %a.btn.btn-success{:href => "#"}
+          %i.fa.fa-download
+        %a.btn.btn-success{:href => "#"}
+          %i.fa.fa-download
+        %a.btn.btn-success{:href => "#"}
+          %i.fa.fa-download
+        %a.btn.btn-success{:href => "#"}
+          %i.fa.fa-download
+  / Выпадающее меню
+  .container
+    %h1 Выпадающее меню
+    %hr/
+    .row
+      .col-md-6
+        .btn-group
+          %button.btn.btn-default.btn-lg.dropdown-toggle{"data-toggle" => "dropdown"}
+            Выпадающее меню
+            %span.caret
+          %ul.dropdown-menu
+            %li
+              %a{:href => "#"} Ссылка
+            %li
+              %a{:href => "#"} Ссылка
+            %li
+              %a{:href => "#"} Ссылка
+            %li
+              %a{:href => "#"} Ссылка
+            %li
+              %a{:href => "#"} Ссылка
+        .btn-group.dropup
+          %button.btn.btn-default.btn-lg.dropdown-toggle{"data-toggle" => "dropdown"}
+            Выпадающее меню
+            %span.caret
+          %ul.dropdown-menu
+            %li
+              %a{:href => "#"} Ссылка
+            %li
+              %a{:href => "#"} Ссылка
+            %li
+              %a{:href => "#"} Ссылка
+            %li
+              %a{:href => "#"} Ссылка
+            %li
+              %a{:href => "#"} Ссылка
+      .col-md-6
+        .btn-group.pull-right
+          %button.btn.btn-default.btn-lg.dropdown-toggle{"data-toggle" => "dropdown"}
+            Выпадающее меню
+            %span.caret
+          %ul.dropdown-menu
+            %li
+              %a{:href => "#"} Ссылка Ссылка Ссылка Ссылка
+            %li
+              %a{:href => "#"} Ссылка Ссылка Ссылка Ссылка
+            %li
+              %a{:href => "#"} Ссылка Ссылка Ссылка Ссылка
+            %li
+              %a{:href => "#"} Ссылка Ссылка Ссылка Ссылка
+            %li
+              %a{:href => "#"} Ссылка Ссылка Ссылка Ссылка
+        .btn-group.dropup
+          %button.btn.btn-success.dropdown-toggle{"data-toggle" => "dropdown"}
+            Выпадающее меню
+          %button.btn.btn-success.dropdown-toggle{"data-toggle" => "dropdown"}
+            %span.caret
+          %ul.dropdown-menu.dropdown-menu-right
+            %li
+              %a{:href => "#"} Ссылка Ссылка Ссылка Ссылка
+            %li
+              %a{:href => "#"} Ссылка Ссылка Ссылка Ссылка
+            %li
+              %a{:href => "#"} Ссылка Ссылка Ссылка Ссылка
+            %li
+              %a{:href => "#"} Ссылка Ссылка Ссылка Ссылка
+            %li
+              %a{:href => "#"} Ссылка Ссылка Ссылка Ссылка
+  / Создание вкладок и спойлера
+  .container
+    .row
+      .col-md-6
+        %h1 Вкладки
+        %hr/
+        %br/
+        .tabs
+          %ul.nav.nav-tabs
+            %li.active
+              %a{"data-toggle" => "tab", :href => "#tab-1"} Вкладка 1
+            %li
+              %a{"data-toggle" => "tab", :href => "#tab-2"} Вкладка 2
+            %li
+              %a{"data-toggle" => "tab", :href => "#tab-3"} Вкладка 3
+          .tab-content
+            #tab-1.tab-pane.fade.in.active.tab__pad
+              %p 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae nostrum, quis accusamus soluta alias sed ipsa excepturi quibusdam sequi, similique?
+            #tab-2.tab-pane.fade.tab__pad
+              %p 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis corporis porro perferendis similique consectetur laudantium tempore, iure tempora in. Eaque!
+            #tab-3.tab-pane.fade.tab__pad
+              %p 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nisi sequi ut, neque velit at reprehenderit aliquid autem ullam necessitatibus.
+      .col-md-6
+        %h1 Спойлер
+        %hr/
+        %a.btn.btn-primary.spoiler.collapsed{"data-toggle" => "collapse", :href => "#spoiler-1"} Спойлер
+        #spoiler-1.collapse
+          .well
+            %p.other-color Параграф с текстом
+  / Аккордеон
+  .container
+    .row
+      .col-md-6
+        %h1 Аккордеон
+        %hr/
+        #accordion.panel-group
+          / Первый
+          .panel.panel-primary
+            .panel-heading
+              %h4.panel-title
+                %a{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapse-1"} Открыть первый слайд
+            #collapse-1.panel-collapse.collapse.in
+              .panel-body
+                %p.other-color 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, quasi?
+          / Второй
+          .panel.panel-primary
+            .panel-heading
+              %h4.panel-title
+                %a{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapse-2"} Открыть второй слайд
+            #collapse-2.panel-collapse.collapse
+              .panel-body
+                %p.other-color 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, quasi?
+          / Третий
+          .panel.panel-primary
+            .panel-heading
+              %h4.panel-title
+                %a{"data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapse-3"} Открыть третий слайд
+            #collapse-3.panel-collapse.collapse
+              .panel-body
+                %p.other-color 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, quasi?
+      .col-md-6
+  / Кнопка модального окна
+  .container
+    %h1 Модальное окно
+    %hr/
+    %button.btn.btn-success{"data-target" => "#modal-1", "data-toggle" => "modal", :type => "button"} Модальное окно
+  / Progress bar или полоса загрузки
+  .container
+    %h1 Progress bar или полоса загрузки
+    %hr/
+    .row
+      .progress
+        .progress-bar.progress-bar-primary{:style => "min-width:2%; width:10%;"}
+          10%
+        .progress-bar.progress-bar-success{:style => "min-width:2%; width:10%;"}
+          10%
+        .progress-bar.progress-bar-info{:style => "min-width:2%; width:10%;"}
+          10%
+        .progress-bar.progress-bar-danger{:style => "min-width:2%; width:10%;"}
+          10%
+        .progress-bar.progress-bar-warning{:style => "min-width:2%; width:10%;"}
+          10%
+      .progress
+        .progress-bar-success.progress-bar.progress-bar-striped{:style => "min-width: 50%;"}
+      .progress
+        .progress-bar-success.progress-bar.progress-bar-striped.active{:style => "min-width: 75%;"}
+  / Грид сетка
+  .container
+    %h1 Grid system
+    %hr/
+    .row
+      .col-xs-6.col-sm-4
+        %h3.text-center Grid 1
+        %p.grid1__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, modi, necessitatibus. Iure, et laudantium saepe vero suscipit deleniti voluptates eligendi.
+      .col-xs-6.col-sm-4
+        %h3.text-center Grid 2
+        %p.grid1__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos repellat aliquam numquam optio accusamus neque, quae sed velit dolorem temporibus!
+      .col-xs-6.col-sm-4
+        %h3.text-center Grid 3
+        %p.grid1__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, necessitatibus nulla provident itaque dolores impedit? Recusandae praesentium illum exercitationem ab.
+:javascript
+  $(function() {
+    $('[data-toggle=popover]').popover({html:true});﻿
+  });

@@ -1,0 +1,11 @@
+#modal-1.modal.fade
+  .modal-dialog.modal-lg
+    .modal-content
+      .modal-header
+        %button.close{"data-dismiss" => "modal", :type => "button"}
+          %i.fa.fa-close
+        %h4.modal-title.other-color Название окна
+      .modal-body
+        %p.other-color Это модальное окно и тут нужно написать его текст
+      .modal-footer
+        %button.btn.btn-danger{"data-dismiss" => "modal", :type => "button"} Выход
