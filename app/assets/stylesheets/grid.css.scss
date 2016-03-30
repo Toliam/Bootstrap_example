@@ -33,10 +33,10 @@
   text-shadow: 2px 6px 10px #CFCFCF;
 }
 
-#bootstrap__link {
-  text-decoration: none;
+.bootstrap__link {
+  text-decoration: none !important;
   font-size: 30px;
-  color: #fff;
+  color: #fff !important;
   background: #db0000;
   padding: 10px 20px;
   border-radius: 5px;
@@ -46,7 +46,7 @@
   transition: all .5s;
 }
 
-#bootstrap__link:hover {
+.bootstrap__link:hover {
   background: #c10000;
 }
 
@@ -54,7 +54,7 @@
   padding: 15px 0;
 }
 
-#bootstrap__link:active {
+.bootstrap__link:active {
   box-shadow: 0 0 11px #670000 inset;
 }
 
