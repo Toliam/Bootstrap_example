@@ -5,6 +5,4 @@ class StaticPagesController < ApplicationController
   def help
   end
 
-  def grid_page
-  end
 end
