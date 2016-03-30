@@ -15,8 +15,8 @@
         .carousel-caption
           %h3 Первый слайд
           %p Описание первого слайда
-          %a.btn.btn-lg.btn-success{:href => "index.html"} Home
-          %a.btn.btn-lg.btn-success{:href => "catalog.html"} Catalog
+          = link_to "Catalog", static_pages_help_path, class: "btn btn-lg btn-success"
+          = link_to "Grid", static_pages_grid_page_path, class: "btn btn-lg btn-success"
       .item
         = image_tag "image-4.jpg", :alt => "Изображение", style: "height:750px;width:1800px;"
         .carousel-caption
@@ -61,7 +61,7 @@
     %i.fa.fa-spinner.fa-pulse.fa-5x
   / Крутая кнопка
   .container
-    %h1 Очень крутая кнопка
+    %h1 Очень крутая кнопка с подсказкой
     %hr/
     .button
       %a.button__a{:href => "#"}
@@ -335,7 +335,3 @@
       .col-xs-6.col-sm-4
         %h3.text-center Grid 3
         %p.grid1__p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, necessitatibus nulla provident itaque dolores impedit? Recusandae praesentium illum exercitationem ab.
-:javascript
-  $(function() {
-    $('[data-toggle=popover]').popover({html:true});﻿
-  });

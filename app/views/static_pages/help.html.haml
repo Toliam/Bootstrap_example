@@ -1,0 +1,119 @@
+%h1.text-center Hi gays, i will work there next time
+.text-center
+  = link_to "Grid", static_pages_grid_page_path, class: "btn btn-lg btn-success"
+  = link_to "Bootstrap", root_path, class: "btn btn-lg btn-success"
+%br/
+/ Каталог товаров
+.container
+  .row
+    .container
+      %ul.nav.nav-pills
+        %li.active
+          %a{:href => "#"}
+            Элемент 1
+            %span.badge 18
+        %li
+          %a{:href => "#"}
+            Элемент 2
+            %span.badge 58
+        %li
+          %a{:href => "#"}
+            Элемент 3
+            %span.badge 32
+        %li
+          %a{:href => "#"}
+            Элемент 4
+            %span.badge 11
+  %hr/
+  .row
+    .col-xs-12.col-sm-6.col-md-4.col-lg-4
+      .thumbnail
+        %img.img-responsive{:alt => "pictures", :src => "http://placehold.it/600x340"}/
+        .caption
+          %h3 Название поста
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque suscipit reprehenderit velit nam repudiandae blanditiis accusantium voluptas. Quasi, omnis, officia.
+          %a.btn.btn-success{:href => "#"}
+            Подробнее
+            %i.fa.fa-arrow-right
+    .col-xs-12.col-sm-6.col-md-4.col-lg-4
+      .thumbnail
+        %img.img-responsive{:alt => "pictures", :src => "http://placehold.it/600x340"}/
+        .caption
+          %h3 Название поста
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque suscipit reprehenderit velit nam repudiandae blanditiis accusantium voluptas. Quasi, omnis, officia.
+          %a.btn.btn-success{:href => "#"}
+            Подробнее
+            %i.fa.fa-arrow-right
+    .col-xs-12.col-sm-6.col-md-4.col-lg-4
+      .thumbnail
+        %img.img-responsive{:alt => "pictures", :src => "http://placehold.it/600x340"}/
+        .caption
+          %h3 Название поста
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque suscipit reprehenderit velit nam repudiandae blanditiis accusantium voluptas. Quasi, omnis, officia.
+          %a.btn.btn-success{:href => "#"}
+            Подробнее
+            %i.fa.fa-arrow-right
+    .col-xs-12.col-sm-6.col-md-4.col-lg-4
+      .thumbnail
+        %img.img-responsive{:alt => "pictures", :src => "http://placehold.it/600x340"}/
+        .caption
+          %h3 Название поста
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque suscipit reprehenderit velit nam repudiandae blanditiis accusantium voluptas. Quasi, omnis, officia.
+          %a.btn.btn-success{:href => "#"}
+            Подробнее
+            %i.fa.fa-arrow-right
+    .col-xs-12.col-sm-6.col-md-4.col-lg-4
+      .thumbnail
+        %img.img-responsive{:alt => "pictures", :src => "http://placehold.it/600x340"}/
+        .caption
+          %h3 Название поста
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque suscipit reprehenderit velit nam repudiandae blanditiis accusantium voluptas. Quasi, omnis, officia.
+          %a.btn.btn-success{:href => "#"}
+            Подробнее
+            %i.fa.fa-arrow-right
+    .col-xs-12.col-sm-6.col-md-4.col-lg-4
+      .thumbnail
+        %img.img-responsive{:alt => "pictures", :src => "http://placehold.it/600x340"}/
+        .caption
+          %h3 Название поста
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque suscipit reprehenderit velit nam repudiandae blanditiis accusantium voluptas. Quasi, omnis, officia.
+          %a.btn.btn-success{:href => "#"}
+            Подробнее
+            %i.fa.fa-arrow-right
+/ Пагинация
+%nav.text-center
+  %ul.pagination.pagination-lg
+    %li.disabled
+      %a{:href => "#"}
+        %i.fa.fa-chevron-left
+        %i.fa.fa-chevron-left
+    %li.disabled
+      %a{:href => "#"}
+        %i.fa.fa-chevron-left
+    %li.active
+      %a{:href => "#"} 1
+    %li
+      %a{:href => "#"} 2
+    %li
+      %a{:href => "#"} 3
+    %li
+      %a{:href => "#"} 4
+    %li
+      %a{:href => "#"} 5
+    %li
+      %a{:href => "#"} 6
+    %li
+      %a{:href => "#"}
+        %i.fa.fa-chevron-right
+    %li
+      %a{:href => "#"}
+        %i.fa.fa-chevron-right
+        %i.fa.fa-chevron-right
+/ Pager(next previous)
+.container
+  %nav
+    %ul.pager
+      %li.previous
+        %a{:href => "#"} ← Старые записи
+      %li.next.disabled
+        %a{:href => "#"} Новые записи →
