@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/* Цвет фона */
+/* line 6, /home/johniewallker/www/example_buttons/app/assets/stylesheets/static_pages.scss */
+body {
+  background: #518FF5;
+  color: #fff;
+  font-size: 18px;
+}
+
+/*Выравнивание текста*/
+/* line 13, /home/johniewallker/www/example_buttons/app/assets/stylesheets/static_pages.scss */
+.grid1__p {
+  text-align: justify;
+  line-height: 1.4em;
+}
+
+/* line 18, /home/johniewallker/www/example_buttons/app/assets/stylesheets/static_pages.scss */
+.in__but {
+  color: #000 !important;
+}
+
+/*Начало крутой кнопки*/
+/* line 23, /home/johniewallker/www/example_buttons/app/assets/stylesheets/static_pages.scss */
+.button {
+  margin: 100px auto;
+  width: 250px;
+  height: 60px;
+  position: relative;
+}
+
+/* line 29, /home/johniewallker/www/example_buttons/app/assets/stylesheets/static_pages.scss */
+.button a.button__a {
+  text-decoration: none;
+  color: #fff !important;
+}
+
+/* line 33, /home/johniewallker/www/example_buttons/app/assets/stylesheets/static_pages.scss */
+.demo {
+  background: #af0000;
+  width: 250px;
+  height: 60px;
+  padding: 0 0 0 50px;
+  text-align: center;
+  position: absolute;
+  line-height: 60px;
+  font-size: 2em;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  -moz-transition: 1.5s;
+  transition: 1.5s;
+  border-radius: 3px;
+}
+
+/* line 51, /home/johniewallker/www/example_buttons/app/assets/stylesheets/static_pages.scss */
+.disc {
+  background: #830000;
+  position: absolute;
+  width: 200px;
+  height: 60px;
+  padding: 10px 0 10px 100px;
+  text-align: center;
+  line-height: 20px;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: 0 3px 3px 0;
+}
+
+/* line 64, /home/johniewallker/www/example_buttons/app/assets/stylesheets/static_pages.scss */
+img.set {
+  vertical-align: middle;
+  position: absolute;
+  z-index: 3;
+  left: 14px;
+  top: 14px;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  -moz-transition: 1.5s;
+  transition: 1.5s;
+}
+
+/* line 76, /home/johniewallker/www/example_buttons/app/assets/stylesheets/static_pages.scss */
+.button:hover .demo {
+  width: 150px;
+  font-size: 1.4em;
+  border-radius: 3px 0 0 3px;
+}
+
+/* line 82, /home/johniewallker/www/example_buttons/app/assets/stylesheets/static_pages.scss */
+.button:hover img.set {
+  transform: rotate(360deg);
+}
+
+/*Конец крутой кнопки*/
+/*Див с отступом*/
+/* line 88, /home/johniewallker/www/example_buttons/app/assets/stylesheets/static_pages.scss */
+.br {
+  width: 100%;
+  float: left;
+  margin: 0 0 20px 0;
+}
+
+/*Сверху баг, отступ убрали от навбара*/
+/* line 95, /home/johniewallker/www/example_buttons/app/assets/stylesheets/static_pages.scss */
+.carousel-inner {
+  margin-top: -20px;
+}
+
+/*Для вкладок отступы*/
+/* line 100, /home/johniewallker/www/example_buttons/app/assets/stylesheets/static_pages.scss */
+.tab__pad.active {
+  padding: 10px 15px;
+}
+
+/* line 104, /home/johniewallker/www/example_buttons/app/assets/stylesheets/static_pages.scss */
+a.spoiler:after {
+  content: " [-]";
+}
+
+/* line 108, /home/johniewallker/www/example_buttons/app/assets/stylesheets/static_pages.scss */
+a.spoiler.collapsed:after {
+  content: " [+]";
+}
+
+/*Цвет отличный от того что в боди*/
+/* line 113, /home/johniewallker/www/example_buttons/app/assets/stylesheets/static_pages.scss */
+.other-color {
+  color: black;
+}
+
+/*В аккордеоне убрать линию ссылки*/
+/* line 118, /home/johniewallker/www/example_buttons/app/assets/stylesheets/static_pages.scss */
+.panel-heading > .panel-title > a {
+  text-decoration: none;
+}
+
+/*Оформление ссылки в навбаре*/
+/* line 123, /home/johniewallker/www/example_buttons/app/assets/stylesheets/static_pages.scss */
+.btn__nav {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 20px;
+  text-decoration: none !important;
+  font-size: 18px;
+}
+
+/*Кнопка в выпадающем меню "Войти" Sign in*/
+/* line 133, /home/johniewallker/www/example_buttons/app/assets/stylesheets/static_pages.scss */
+.btn__lar {
+  float: right;
+  margin-bottom: 10px;
+}
+
+/*Выпадающее меню размер в навбаре*/
+/* line 139, /home/johniewallker/www/example_buttons/app/assets/stylesheets/static_pages.scss */
+div.popover.fade.bottom.in {
+  width: 400px;
+  max-width: 400px !important;
+}
+
+/*Выпадающее меню размер в навбаре*/
+/* line 145, /home/johniewallker/www/example_buttons/app/assets/stylesheets/static_pages.scss */
+div.popover.fade.bottom {
+  width: 400px;
+  max-width: 400px !important;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

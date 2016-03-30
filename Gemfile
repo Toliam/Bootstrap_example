@@ -47,6 +47,8 @@ gem 'redcarpet'
 group :production do
   gem 'capistrano', github: 'capistrano/capistrano', ref: '96a16'
   gem 'unicorn'
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
 end
 
 group :test, :development do
