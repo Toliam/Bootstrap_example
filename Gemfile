@@ -16,6 +16,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer',  platforms: :ruby
 gem 'friendly_id', '~> 5.0.0'
 gem 'twitter-bootstrap-rails'
+gem 'bootstrap-sass'
 gem "less-rails"
 gem 'haml-rails'
 gem 'rails-i18n', '~> 4.0.0'
