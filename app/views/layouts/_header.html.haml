@@ -1,5 +1,5 @@
 %header
-  .navbar.navbar-default{:role => "navigation"}
+  .navbar.navbar-default.navbar-static-top{:role => "navigation"}
     .container
       .navbar-header
         %button.navbar-toggle{"data-target" => "#responsive-menu", "data-toggle" => "collapse", :type => "button"}
@@ -7,25 +7,25 @@
           %span.icon-bar
           %span.icon-bar
           %span.icon-bar
-        %a.navbar-brand{:href => "index.html"} Home
+        = link_to "Home", root_path ,class: "navbar-brand"
       #responsive-menu.collapse.navbar-collapse
         %ul.nav.navbar-nav
           %li
             %a{:href => "#"} Пункт 1
           %li.dropdown
             %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-              Пункт 2
+              Развернуть меню
               %b.caret
             %ul.dropdown-menu
               %li
-                %a{:href => "#"} Подменю 1
+                = link_to "First", first_path
               %li
-                %a{:href => "#"} Подменю 2
+                = link_to "Second", second_path
               %li
-                %a{:href => "#"} Подменю 3
+                = link_to "Third", third_path
               %li.divider
               %li
-                %a{:href => "#"} Подменю 4
+                = link_to "Four", fourth_path
           %li
             %a{:href => "#"} Пункт 3
           %li
@@ -33,5 +33,6 @@
         %ul.navbar-right.navbar-nav.nav
           %li
             %a{:href => "#"} Registration
+          -# Выпадающее меню с формой входа
           %li
             %button.btn.btn-link.btn__nav{:type=>"button", "data-placement" => "bottom", "data-toggle" => "popover", :title => "<h3 class='text-center in__but'>Sign in </h3>", "data-content" => "<form action=''><div class='form-group'><input type='text' class='form-control' placeholder='E-mail' value=''></div><div class='form-group'><input type='password' class='form-control' placeholder='Password' value=''></div><button type='submit' class='btn btn-primary btn__lar'><i class='fa fa-sign-in'></i> ВОЙТИ</button></form>"} Sign in
