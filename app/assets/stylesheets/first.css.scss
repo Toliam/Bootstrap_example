@@ -100,4 +100,106 @@ a.button__first:hover, a.button__first:focus {
   opacity: 1;
 }
 /* Кнопка конец */
+/* Кнопка 2 начало */
+.thb-btn{
+  text-decoration: none !important;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  border-width: 2px;
+  border-style: solid;
+  padding: 12px;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 14px;
+  border-radius: 4px;
+  display: inline-block;
+  font-weight: 400;
+}
+.thb-read-more:hover{
+  color: white !important;
+  border-color: #00aeef;
+}
 
+.thb-btn:hover{
+  border-color: #097988;
+}
+
+.thb-read-more{
+  font-weight: bold !important;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+
+}
+
+.thb-btn.thb-read-more:hover:before{
+  margin-left: 0;
+    -khtml-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.thb-btn.thb-read-more:before{
+  content: "\f105";
+  display: block;
+  float: right;
+  text-align: right;
+  font-size: 14px;
+  width: 24px;
+  margin-left: -24px;
+  line-height: 1;
+  -khtml-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.thb-btn.thb-read-more:hover:after{
+  -khtml-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  width: 100%;
+}
+.thb-btn.thb-read-more:after{
+  background-color: #097988;
+}
+.thb-btn.thb-read-more:after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0;
+  height: 100%;
+  border-radius: 2px;
+  z-index: -1;
+  -khtml-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.bg-wh{
+  background-color:white;
+  color: black;
+  height: 300px;
+}
+.thb-read-more_b:hover{
+  border-color: #00aeef;
+}
+.thb-btn.thb-read-more_b:after{
+  background-color: #00aeef;
+}
